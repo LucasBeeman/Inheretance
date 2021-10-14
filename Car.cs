@@ -11,11 +11,17 @@ namespace Inheretance
         public string Make { get; set; }
         public string Model { get; set; }
         public string Year { get; set; }
+        public double gas { get; set; }
 
         public bool Equals(Car car)
         {
-            return (this.Make, this.Model, this.Year) ==
-                (car.Make, car.Model, car.Year);
+            return (this.Make, this.Model, this.Year, this.gas) ==
+                (car.Make, car.Model, car.Year, car.gas);
+        }
+
+        public void FillGas()
+        {
+            gas += 10;
         }
     }
 }

@@ -8,6 +8,11 @@ namespace Inheretance
 {
     class Sedan : Car
     {
-
+        public Sedan(string make, string model, string year)
+        {
+            make = "Honda";
+            model = "Accord";
+            year = "2009";
+        }
     }
 }
