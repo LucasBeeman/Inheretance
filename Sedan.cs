@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Inheretance
 {
-    class Sedan : Car
+    class Sedan : Car, IAutomobile<Car>
     {
         public Sedan(string make, string model, string year) : base(make, model, year)
         {

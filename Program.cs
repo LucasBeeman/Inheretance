@@ -13,6 +13,8 @@ namespace Inheretance
             Sedan honda = new Sedan("Honda", "Accord", "2009");
 
             Console.WriteLine(honda.Description());
+            honda.FillGas(10000);
+            Console.WriteLine(honda.Description());
             Console.ReadKey();
         }
     }
