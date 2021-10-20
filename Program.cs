@@ -11,10 +11,12 @@ namespace Inheretance
         static void Main(string[] args)
         {
             Sedan honda = new Sedan("Honda", "Accord", "2009");
+            SemiTruck truck = new SemiTruck("make", "model", "year")
 
             Console.WriteLine(honda.Description());
             honda.FillGas(10000);
             Console.WriteLine(honda.Description());
+            Console.WriteLine(truck.Description());
             Console.ReadKey();
         }
     }

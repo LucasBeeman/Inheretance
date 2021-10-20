@@ -10,7 +10,7 @@ namespace Inheretance
     {
         public SemiTruck(string make, string model, string year) : base(make, model, year)
         {
-            Wheels = 4;
+            Wheels = 18;
             Gas = 10;
             MaxGas = 18.5;
         }
