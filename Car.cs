@@ -34,11 +34,17 @@ namespace Inheretance
             {
                 Gas = MaxGas;
             }
-            else if (Gas < 0)
+        }
+
+        public void EmptyGas(double amount)
+        {
+            Gas -= amount;
+            if (Gas < 0)
             {
                 Gas = 0;
             }
         }
+
 
         public abstract string Description();
     }

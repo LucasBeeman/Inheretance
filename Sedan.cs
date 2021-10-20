@@ -11,13 +11,13 @@ namespace Inheretance
         public Sedan(string make, string model, string year) : base(make, model, year)
         {
             Wheels = 4;
-            Gas = 50;
-            MaxGas = 100;
+            Gas = 10;
+            MaxGas = 18.5;
         }
 
         public override string Description()
         {
-            return $"This Sedan drives on {Wheels} wheels. was built by {Make}. The model is {Model}. and the year is {Year}";
+            return $"This Sedan drives on {Wheels} wheels. was built by {Make}. The model is {Model}. and the year is {Year}, and has {Gas} gallson of gas in the tank.";
         }
     }
 }
