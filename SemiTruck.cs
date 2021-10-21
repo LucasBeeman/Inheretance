@@ -1,23 +1,18 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Inheretance
+﻿namespace Inheretance
 {
     class SemiTruck : Car, IAutomobile<Car>
     {
         public SemiTruck(string make, string model, string year) : base(make, model, year)
         {
+            //notice how the 3 variables are differant than in sedan
             Wheels = 18;
-            Gas = 10;
-            MaxGas = 18.5;
+            Gas = 100;
+            MaxGas = 250;
         }
-
+        //notice how the description is different than on sedan
         public override string Description()
         {
-            return $"This Sedan drives on {Wheels} wheels. was built by {Make}. The model is {Model}. and the year is {Year}, and has {Gas} gallson of gas in the tank.";
+            return $"This Semitruck drives on {Wheels} wheels. was built by {Make}. The model is {Model}. and the year is {Year}, and has {Gas} gallons of diesel in the tank.";
         }
     }
 }

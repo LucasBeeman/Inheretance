@@ -43,6 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="SemiTruck.cs" />
     <Compile Include="Car.cs" />
     <Compile Include="Sedan.cs" />
     <Compile Include="MyInterface.cs" />

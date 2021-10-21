@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Inheretance
+﻿namespace Inheretance
 {
     abstract class Car : IAutomobile<Car>
     {
@@ -14,11 +8,11 @@ namespace Inheretance
         public double Gas { get;  protected set; }
         public double MaxGas { get; protected set; }
         public int Wheels { get; protected set; }
-
+        //Implementation of the IAutomobile interface
         public bool Equals(Car car)
         {
-            return (this.Make, this.Model, this.Year, this.Gas, this.MaxGas) ==
-                (car.Make, car.Model, car.Year, car.Gas, car.MaxGas);
+            return (this.Make, this.Model, this.Year, this.Gas, this.MaxGas, this.Wheels) ==
+                (car.Make, car.Model, car.Year, car.Gas, car.MaxGas, car.Wheels);
         }
 
         public Car(string make, string model, string year)

@@ -1,14 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Inheretance
+﻿namespace Inheretance
 {
     interface IAutomobile<T>
     {
-
         bool Equals(T obj);
         void FillGas(double amount);
     }
